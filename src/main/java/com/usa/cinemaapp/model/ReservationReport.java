@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 public class ReservationReport {
 
-    private Integer complete;
+    private Integer completed;
     private Integer cancelled;
 
 }
