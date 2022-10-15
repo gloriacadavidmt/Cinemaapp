@@ -18,9 +18,9 @@ public class Cinema {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    private String name;
     private String owner;
     private String capacity;
-    private String name;
     private String description;
 
     @ManyToOne

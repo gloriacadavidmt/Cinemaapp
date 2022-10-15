@@ -24,5 +24,5 @@ public class Category {
 
     @OneToMany(cascade = {CascadeType.PERSIST}, mappedBy = "category")
     @JsonIgnoreProperties("category")
-    private List<Cinema> cinema;
+    private List<Cinema> cinemas;
 }
