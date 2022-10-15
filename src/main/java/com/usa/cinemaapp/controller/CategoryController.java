@@ -36,7 +36,7 @@ public class CategoryController {
     public Category update(@RequestBody Category category){
         return categoryService.update(category);
     }
-    @DeleteMapping("/delete")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable("id") Integer id){
         return categoryService.delete(id);

@@ -35,7 +35,7 @@ public class CinemaController {
     public Cinema update(@RequestBody Cinema cinema){
         return cinemaService.update(cinema);
     }
-    @DeleteMapping("/delete")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean delete(@PathVariable("id") Integer id){
         return cinemaService.delete(id);
