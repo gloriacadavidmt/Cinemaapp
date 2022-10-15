@@ -20,7 +20,7 @@ public class Cinema {
     private Integer id;
     private String name;
     private String owner;
-    private String capacity;
+    private Integer capacity;
     private String description;
 
     @ManyToOne
