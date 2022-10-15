@@ -1,11 +1,15 @@
 package com.usa.cinemaapp.controller;
 
+import com.usa.cinemaapp.model.ClientReport;
 import com.usa.cinemaapp.model.Reservation;
+import com.usa.cinemaapp.model.ReservationReport;
 import com.usa.cinemaapp.service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.crypto.Data;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -44,4 +48,18 @@ public class ReservationController {
         return reservationService.delete(id);
     }
 
+    @GetMapping("/report-status")
+    public ReservationReport getReservationStatusReport(){
+        return reservationService.getReservationsStatusReport();
+    }
+
+    @GetMapping("/report-dates/{dateOne}/{dateTwo}")
+    public List<Reservation> getReservationReportDates(@PathVariable("dateOne")String dateOne, @PathVariable("dateTwo")String dateTwo){
+        return getReservationReportDates(dateOne, dateTwo);
+    }
+
+    @GetMapping("/report-clients")
+    public List<ClientReport> getReportClients(){
+        return reservationService.getTopClients();
+    }
 }
