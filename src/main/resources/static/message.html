@@ -10,14 +10,45 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script type="text/javascript" src="scripmessage.js"></script>
 <link rel="stylesheet" href="style.css">
+<!-- CCS Boostrap-->
+<link rel="stylesheet" href="./bootstrap.min.css">
 
 <body onload="mensaje.getMensaje()">
     
-   
+ <div class="container fluid">  
+    
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark border-3 border-bottom ">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand"> <h1>CINEMA G8 </h1></a>
+                <button type="button" class="navbar-toggler">
+                    <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menunavegacion"></span>
+                </button>
+                <div id="menunavegacion" class="collapse navbar-collapse"></div>
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item"><a href="clients.html" class="nav-link">Explora que tenemos para nuestros clientes</a></li>
+                    <li class="nav-item"><a href="cinema.html" class="nav-link">Explora nuestros cinemas y funciones</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Regresar</a></li>
+                </ul>    
+                
+            </div>
+        </nav>
+    </div>
 
-    <div class="left-panel">
+    <div>
+        <style>
+            body{
+                background-image: url("./peliculas/popcorn-4885565.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+        </style>
+    </div>
+
+    <div class="container-fluid">
         
-        <h1>GESTIÓN DE MENSAJES CINEMAS</h1>
+        <h1 class="">Gestión de mensajes CINEMA G8</h1>
         
         <div>
             <label for="idmensaje">Id del mensaje</label>
@@ -36,9 +67,9 @@
         </div>
     </div>
 
-    <div class="right-panel">
+    <div class="container-fluid">
         <h1>Listado mensajes Cinemas</h1>
-        <table>
+        <table class="table">
             <thead>
                 <tr>
                     <th>Mensaje</th>
@@ -56,6 +87,10 @@
             <p>No se ha seleccionado ningun mensaje</p>
         </div>
     </div>
+</div>
+
+<!-- JS boostrap-->
+<script src="./bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

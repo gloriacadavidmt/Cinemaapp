@@ -4,11 +4,11 @@ body{
 }
 
 .left-panel{
-    width: 20%;
+    width: 50%;
 }
 
 .right-panel{
-    width: 80%;
+    width: 50%;
 }
 
 form>div{

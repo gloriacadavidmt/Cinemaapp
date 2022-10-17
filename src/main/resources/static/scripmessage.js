@@ -73,7 +73,6 @@ class mensaje {
                     <td>
                         <a href="javascript:mensaje.getMensajeId(${datosm.items[index].id})"> ${datosm.items[index].id} </a>
                     </td>
-
                     </tr>
                     `);
                 }
@@ -100,7 +99,8 @@ class mensaje {
                 } else {
                     $("#detalle-mensaje").html(`
                         <p><b>id:</b> ${datosm.items[0].id} </p>        
-                        <p><b>id:</b> ${datosm.items[0].messagetext} </p>
+                        <p><b>id mensaje:</b> ${datosm.items[0].messagetext} </p>
+                        <button type="button" onclick="mensaje.deleteMensajeId(${datosm.items[0].id})">Borrar</button>
                 `);
                 }
             }, error:function(){
