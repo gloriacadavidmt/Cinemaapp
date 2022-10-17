@@ -1,4 +1,4 @@
-const ApiUrlM ="https://g71bacffd8f3da0-ablv3hh69sw9b5ma.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/open-api-catalog/message";
+const ApiUrlM ="https://g71bacffd8f3da0-ablv3hh69sw9b5ma.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/message/message";
 
 class mensaje {
 
