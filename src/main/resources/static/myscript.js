@@ -140,7 +140,7 @@ function borrarCliente(idCliente){
 
 ///////////////////////////////////// ejercicio 2 con profesor jose
 
-const ApiUrl ="https://g71bacffd8f3da0-ablv3hh69sw9b5ma.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/open-api-catalog/client/client";
+const ApiUrl ="https://g71bacffd8f3da0-ablv3hh69sw9b5ma.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client";
 
 class readClientes{
 
